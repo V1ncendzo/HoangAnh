@@ -36,7 +36,7 @@ public class Cart {
                 qtyOrdered -= 1;
             }
         }else{
-            System.out.println("Disc is not in the cart");
+            System.out.println("hust.soict.cs.aims.media.Disc is not in the cart");
         }
     }
     public double totalCost(){

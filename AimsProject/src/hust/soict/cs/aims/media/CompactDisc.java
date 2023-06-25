@@ -1,3 +1,4 @@
+package hust.soict.cs.aims.media;
 
 import java.util.ArrayList;
 
@@ -16,7 +17,7 @@ public class CompactDisc extends Disc implements Playable {
         this.tracks = tracks;
     }
 
-    public  CompactDisc(int id,String title,String category,String director,String artist,ArrayList<Track> tracks,float cost) {
+    public  CompactDisc(int id, String title, String category, String director, String artist, ArrayList<Track> tracks, float cost) {
         this.category = category;
         this.director = director;
         this.artist = artist;
@@ -74,7 +75,7 @@ public class CompactDisc extends Disc implements Playable {
         int i = 1;
         for (Track track : tracks)
         {
-            System.out.print("Track " + i + ": ");
+            System.out.print("hust.soict.cs.aims.media.Track " + i + ": ");
             track.play();
             i += 1;
         }

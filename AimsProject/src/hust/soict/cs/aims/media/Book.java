@@ -1,3 +1,5 @@
+package hust.soict.cs.aims.media;
+
 import java.util.ArrayList;
 import java.util.List;
 import hust.soict.cs.aims.media.Media;

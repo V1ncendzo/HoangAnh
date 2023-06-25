@@ -1,3 +1,4 @@
+package hust.soict.cs.aims.media;
 
 import hust.soict.cs.aims.media.Media;
 

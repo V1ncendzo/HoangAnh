@@ -1,3 +1,4 @@
+package hust.soict.cs.aims.media;
 
 public class Track implements Playable {
     private String title;
