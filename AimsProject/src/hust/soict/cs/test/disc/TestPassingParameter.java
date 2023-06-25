@@ -1,6 +1,6 @@
 package hust.soict.cs.test.disc;
-
 import hust.soict.cs.aims.disc.DigitalVideoDisc;
+
 
 public class TestPassingParameter {
     public static void main(String[] args) {
@@ -9,20 +9,20 @@ public class TestPassingParameter {
         DigitalVideoDisc cinderallaDVD = new DigitalVideoDisc("Cinderalla");
 
         swap(jungleDVD, cinderallaDVD); // pass by value : create alternative objects that do not affect the actual objects
-        System.out.println("jungle dvd title: " + jungleDVD.getTilte());
-        System.out.println("cinderella dvd title: " + cinderallaDVD.getTilte());
+        System.out.println("jungle dvd title: " + jungleDVD.getTitle());
+        System.out.println("cinderella dvd title: " + cinderallaDVD.getTitle());
 
-        changeTitle(jungleDVD, cinderallaDVD.getTilte());
-        System.out.println("jungle dvd title: " + jungleDVD.getTilte());
+        changeTitle(jungleDVD, cinderallaDVD.getTitle());
+        System.out.println("jungle dvd title: " + jungleDVD.getTitle());
     }
     public static void swap(Object o1, Object o2){
         Object tmp = o1;
         o1 = o2;
         o2 = tmp;
     }
-     public static void changeTitle(DigitalVideoDisc dvd, String title) {
-        String oldTitle = dvd.getTilte();
-        dvd.setTilte(title);
+    public static void changeTitle(DigitalVideoDisc dvd, String title) {
+        String oldTitle = dvd.getTitle();
+        dvd.setTitle(title);
         dvd = new DigitalVideoDisc(oldTitle);
-     }
+    }
 }

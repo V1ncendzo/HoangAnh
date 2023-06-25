@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 public class Store {
     private ArrayList<DigitalVideoDisc> itemsInStore = new ArrayList<>();
-
     public void addDVD(DigitalVideoDisc... DVDlist)
     {
         for(DigitalVideoDisc disc : DVDlist)
@@ -27,4 +26,3 @@ public class Store {
 
 
 }
-
